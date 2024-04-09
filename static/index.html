@@ -9,41 +9,58 @@
 <main>
     <h1>Найди себе друга!</h1>
     <form action="/pets/orders" method="post">
-        <label for="petType">Выберите животное:</label>
-        <select name="petType" id="petType">
-            <option value="dog">Собака</option>
-            <option value="cat">Кошка</option>
-            <option value="hamster">Хомяк</option>
-            <option value="goldfish">Колючий сосунок</option>
-        </select> <br>
+        <label>Выберите животное:
+            <select name="petType">
+                <option value="dog">Собака</option>
+                <option value="cat">Кошка</option>
+                <option value="hamster">Хомяк</option>
+                <option value="pricklySucker">Колючий сосунок</option>
+            </select>
+        </label><br>
 
-        <label for="name">Введите имя животного:</label>
-        <input type="text" name="name" id="name" min=3 max=50 placeholder="Дьявол"> <br>
+        <label>
+            Введите имя животного:
+            <input type="text" name="name"  min=3 max=50 placeholder="Дьявол">
+        </label><br>
 
-        <label for="gender">Выберите пол животного:</label>
-        <select name="gender" id="gender">
-            <option value="dog">Мальчик</option>
-            <option value="cat">Девочка</option>
-            <option value="hamster">Ещё не определился</option>
-        </select> <br>
+        <label>
+            Выберите пол животного:
+            <select name="gender">
+                <option value="dog">Мальчик</option>
+                <option value="cat">Девочка</option>
+                <option value="hamster">Ещё не определился</option>
+            </select>
+        </label><br>
 
-        <label for="eyeColor">Выберите цвет глаз животного:</label>
-        <input type="color" name="eyeColor" id="eyeColor"> <br>
+        <label>
+            Выберите цвет глаз животного:
+            <input type="color" name="eyeColor">
+        </label><br>
 
-        <label for="tailLength">Введите длину хвоста животного:</label>
-        <input type="number" name="tailLength" id="tailLength"> <br>
+        <label>
+            Введите длину хвоста животного:
+            <input type="number" name="tailLength">
+        </label><br>
 
-        <label for="dateOfBirth">Введите дату рождения животного:</label>
-        <input type="date" name="dateOfBirth" id="dateOfBirth"> <br>
+        <label>
+            Введите дату рождения животного:
+            <input type="date" name="dateOfBirth">
+        </label><br>
 
-        <label for="phone">Введите телефон животного:</label>
-        <input type="tel" name="phone" id="phone" required placeholder="+76662281337"> <br>
+        <label>
+            Введите телефон животного:
+            <input type="tel" name="phone" required placeholder="+76662281337">
+        </label><br>
 
-        <label for="email">Email
-            <input type="email" name="email" id="email" required placeholder="byakasobaka@mail.ru"> <br>
+        <label>
+            Email
+            <input type="email" name="email" required placeholder="byakasobaka@mail.ru"> <br>
         </label>
 
-        <label><input type="radio" name="rules" value="true"> Согласен с правилами сайта</label><br>
+        <label>
+            <input type="radio" name="rules" value="true">
+            Согласен с правилами сайта
+        </label><br>
 
         <button type="submit">Отправить</button> <br>
         <input type="reset" value="Сбросить">
